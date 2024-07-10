@@ -1,0 +1,106 @@
+.mission{
+    background-color: $gray;
+    padding:2rem 1rem 1rem 1rem;
+    color:$white;
+    font-family: $font-default;
+    .content{
+        margin:0 auto;
+        display: grid;
+        direction: rtl;
+        grid-template-columns:  1fr;
+        gap:1rem;
+    }
+    .logo{max-width:60%;}
+    .logo-round{
+        width:100%;
+        aspect-ratio: 1;
+    }
+    h2{
+        font-family: $font-header;
+        text-transform: uppercase;
+    }
+    .social-icons{
+        margin:0;
+        padding:0;
+        display: flex;
+        li{
+            list-style-type: none;
+            padding:0;
+            margin:0 1rem 0 0;
+            a{
+                display: flex;
+                background-color:$white;
+                margin:auto;
+                border-radius: 10px;
+                height:2rem;
+                width:2rem;
+                justify-content: center;
+                img{
+                    width:60%;
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+
+.address-block{
+    background-color: $gray-dark;
+    color:$white;
+    font-family: $font-header;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding:0 2rem 2rem 2rem;
+    .content{
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom:10vh;
+    }
+}
+.phone-email{
+    grid-column: span 2;
+    text-align: center;
+    padding:4rem 0 1rem 0;
+}
+.location{
+    font-size: .8rem;
+}
+
+.mobile-nav{
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100vw;
+    z-index: 99999;
+    background: $black;
+    color:$white;
+    box-shadow: 2px 2px 6px 2px rgba($black,.5); 
+    display: flex;
+    justify-content: space-around;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height:6vh;
+            aspect-ratio: 1;
+            filter: invert(100%) brightness(100%)
+        }
+    }
+}
+@media only screen and (min-width: 767px) {
+
+    .mission {
+        clip-path: url(#curveOutTop);
+        shape-outside: url(#curveOutTop);
+        .content, .address-block .content{
+            max-width: $center-col-width;
+            margin-bottom:0;
+            direction: ltr;
+            gap:4rem;
+            grid-template-columns:  1fr fit-content(140px);
+        }
+    }
+    .mobile-nav{ display: none;}
+}

@@ -1,0 +1,31 @@
+.contact-form{
+    // background-color: $gray-ultralight;
+    margin:0; padding:0;
+    .content{
+        max-width: 600px;
+        margin:0 auto;
+        padding:1rem 2rem 3rem 2rem;
+    }
+    p{margin-bottom: 2rem;}
+}
+
+// honeypot
+form{
+    display:grid;
+    grid-template-columns: 5rem 1fr;
+    gap: 1rem;
+    row-gap: 2rem;
+}
+label{
+    width:100%;
+    text-align: right;
+}
+input{
+    width:100%;
+}
+label[for=phone]{
+    display: none;
+}
+textarea{
+    width:100%;
+}

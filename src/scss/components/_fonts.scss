@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Din-reg';
+  src:url('/DINPro.woff') format('woff');
+}
+@font-face {
+  font-family: 'Din-light';
+  src:url('/DINPro-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Din-black';
+  src:url('/DINPro-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'def';
+  src:url('/def.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'fgf';
+  src:url('/fgf.woff') format('woff');
+}
+$font-header:Din-reg, Arial, Helvetica, sans-serif;
+$font-heavy:Din-black, "Arial Black", Arial, sans-serif;
+$font-default:def,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+body{
+  font-family: $font-default;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-heavy;
+  text-transform: uppercase;
+}
+a{
+  color:$orange;
+}

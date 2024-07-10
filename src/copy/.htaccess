@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^services/?([A-Za-z0-9-]+)/?$ services/index.php?service=$1 [NC,QSA,L]
+RewriteRule ^location/?([A-Za-z0-9-]+)/?$ location/index.php?loc=$1 [NC,QSA,L]

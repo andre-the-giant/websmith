@@ -1,0 +1,62 @@
+@keyframes hero-text-anim {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0)
+    }
+
+    75% {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes header-logo {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    75% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes header-tagline {
+    0% {
+        opacity: 0;
+        transform: translate3d(10px, 0, 0)
+    }
+
+    75% {
+        opacity: 0;
+        transform: translate3d(10px, 0, 0)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0)
+    }
+}
+@keyframes header-navigation {
+    0% {
+        opacity: 0;
+        transform: translate3d(10px, 0, 0)
+    }
+
+    75% {
+        opacity: 0;
+        transform: translate3d(10px, 0, 0)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0)
+    }
+}
