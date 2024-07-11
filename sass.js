@@ -6,7 +6,7 @@ var pkg = require('./package.json');
 // Configs
 var configs = {
 	name: 'websmith',
-	files: ['main.scss'], // list all .scss files that should be processed
+	files: ['main.scss','services-page'], // list all .scss files that should be processed
 	pathIn: 'src/scss',
 	pathOut: 'dist/css',
 	indentType: 'tab',

@@ -35,7 +35,7 @@
             }
         } else {
             // CSRF token validation failed; consider it as a potential security threat
-            echo "<h3>Error: CSRF Token Validation Failed.</h3>";
+            echo "<h3>Error: Validation Failed.</h3>";
         }
     } else {
         // Generate a CSRF token and store it in the session
